@@ -1,0 +1,4 @@
+# 此文件用于确保 resources 目录被 git 跟踪
+# 请将 scrcpy-server.jar 和 adb 二进制文件放置在此目录
+
+

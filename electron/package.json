@@ -1,0 +1,60 @@
+{
+  "name": "gaia-workspace-phone",
+  "version": "1.0.0",
+  "description": "AI 驱动的 Android 设备自动化桌面应用",
+  "main": "out/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "dist": "electron-vite build && electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "android",
+    "automation",
+    "ai"
+  ],
+  "author": "GAIA-WorkSpace-Phone Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.0",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.1",
+    "electron-vite": "^2.0.0",
+    "vite": "^5.0.0",
+    "vue": "^3.4.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.7.0",
+    "marked": "^17.0.1"
+  },
+  "build": {
+    "appId": "com.gaia.workspace.phone",
+    "productName": "GAIA-WorkSpace-Phone",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "out/**/*",
+      "resources/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "python-service",
+        "to": "python-service"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}

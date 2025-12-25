@@ -1,0 +1,95 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+venv/
+env/
+ENV/
+.venv/
+
+# PyInstaller 打包产物
+python-service/build/
+python-service/dist/
+python-service/*.spec
+
+# Electron
+node_modules/
+dist/
+*.log
+.DS_Store
+electron/dist/
+electron/dist-electron/
+electron/node_modules/
+electron/out/
+electron/release/
+
+# Electron 打包后的 Python 服务（会从 python-service/dist 复制过来）
+electron/python-service/python-service
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 资源文件（建议保留在版本控制中，但可根据需要调整）
+# 如果资源文件较大或敏感，取消下面注释以忽略：
+# resources/scrcpy-server.jar
+# resources/adb/
+
+# 临时资源文件
+resources/tmp/
+resources/*.tmp
+
+# 环境变量
+.env
+.env.local
+.env.*.local
+
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# 日志文件
+*.log
+logs/
+
+# 测试覆盖率
+.coverage
+htmlcov/
+.pytest_cache/
+
+# 配置文件（如果包含敏感信息）
+# config.local.json
+# settings.local.json

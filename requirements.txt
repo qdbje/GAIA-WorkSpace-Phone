@@ -1,0 +1,16 @@
+# GAIA-WorkSpace-Phone Python 依赖
+
+# Web 框架
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+websockets>=12.0
+
+# ADB 操作
+adbutils>=2.6.0
+
+# AI 模型客户端
+openai>=1.3.0
+
+# 其他工具
+python-multipart>=0.0.6
+
